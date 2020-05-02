@@ -50,7 +50,7 @@ p {
 
 #showcase .bg-image {
   position: absolute;
-  background: #696969 url(/img/showcase.jpg);
+  background: #696969 url("/img/showcase.jpg");
   border-bottom: #2690d4 3px solid;
   background-position: center;
   background-repeat: no-repeat;
