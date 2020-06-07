@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #696969;
+  background: linear-gradient(to right, rgb(79, 48, 255), rgb(118, 115, 126));
   color: #ffffff;
   font-size: 1.1em;
   line-height: 1.5;
@@ -50,7 +50,7 @@ p {
 
 #showcase .bg-image {
   position: absolute;
-  background: #696969 url("/img/showcase.jpg");
+  background: #696969 url("../public/css/img/showcase.jpg");
   border-bottom: #2690d4 3px solid;
   background-position: center;
   background-repeat: no-repeat;

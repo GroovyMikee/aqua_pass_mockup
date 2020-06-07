@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aqua Pass</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../public/css/style.css">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
       <ul>
         <li>
           <div class="card">
-            <img src="./img/1.jpg" alt="">
+            <img src="../public/css/img/1.jpg" alt="">
             <div class="card-content">
               <h3 class="card-title">Przepusty APP</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit
@@ -48,7 +48,7 @@
         </li>
         <li>
           <div class="card">
-            <img src="./img/2.jpg" alt="">
+            <img src="../public/css/img/2.jpg" alt="">
             <div class="card-content">
               <h3 class="card-title">Wkłady jednokablowe APW1</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit
@@ -58,7 +58,7 @@
         </li>
         <li>
           <div class="card">
-            <img src="./img/3.jpg" alt="">
+            <img src="../public/css/img/3.jpg" alt="">
             <div class="card-content">
               <h3 class="card-title">Wkłady wielokablowe APW3</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit
@@ -81,18 +81,19 @@
       <div class="box box1">
         <div class="contact">
           <h3>Skontaktuj sie z nami</h3>
-          <form class="contact">
+          {{msg}}
+          <form class="contact" method="POST" action="send">
             <div>
-              <label>Name</label><br>
-              <input type="text" placeholder="Imię">
+              <label>Imię</label><br>
+              <input type="text" name="name" placeholder="Imię">
             </div>
             <div>
               <label>Email</label><br>
-              <input type="email" placeholder="Email">
+              <input type="email" name="email" placeholder="Email">
             </div>
             <div>
               <label>Wiadomość</label><br>
-              <textarea cols="30" rows="10" placeholder="Treść wiadomości"></textarea>
+              <textarea name="message" cols="30" rows="10" placeholder="Treść wiadomości"></textarea>
             </div>
             <button class="btn" type="submit">Wyślij</button>
           </form>
